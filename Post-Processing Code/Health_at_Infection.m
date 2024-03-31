@@ -10,6 +10,7 @@ processedInfectionTimes = []; % Tracks processed infection times to avoid redund
 % Arrays for storing infection event-related data
 Frame_Number_at_infection_event_set = [];
 Length_at_infection_event_set = [];
+Time_at_infection_event_set = [];
 Radius_at_infection_event_set = [];
 Elongation_at_infection_event_set = [];
 CDCL_at_infection_event_set = []; % Cell Division Cycle Length
