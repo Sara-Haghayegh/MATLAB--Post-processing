@@ -31,7 +31,7 @@ Life_stage_noninf = []; % Life stage for non-infected
 % Loop over all constructed lineages tree
 for j = 1:numel(W)
     %% Check the infected lineages
-    if tree_labels(j) == 2  % if it is infected and this cell-object corresponds to an infection event
+    if tree_labels(j) == 2  % if it is infected 
 
         for i = 1:nnodes(W(j)) % loop over all nodes in this target_infected tree
 
@@ -60,7 +60,7 @@ for j = 1:numel(W)
         end
     end
 
-    % Second pass: Record data for non-infected cells at infection times without redundancy
+    % Second: Record data for non-infected cells at infection times without redundancy
     for infectionTime = infectionEvents
         % Check if we've already processed this infection time for non-infected cells
         if ismember(infectionTime, processedInfectionTimes)
